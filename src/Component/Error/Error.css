@@ -1,0 +1,27 @@
+.error-parent {
+  position: relative;
+  height: 500px;
+  /* border: 1px solid green; */
+}
+.error-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: capitalize;
+  /* background-color: rebeccapurple; */
+  
+}
+.error-child p{
+    font-size: 60px;
+}
+.error-child a {
+  color: #0062ff !important;
+  font-size:  5vw !important;
+}
+.error-child a:hover {
+  color: #3574da !important;
+  text-decoration-line: underline !important;
+}

@@ -1,0 +1,147 @@
+.footer-sec {
+  width: 100%;
+  border: 1px solid transparent;
+}
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0 60px;
+  /* justify-content: space-around; */
+  /* border: 1px solid rgb(212, 255, 0); */
+}
+.footer-about,
+.footer-navgation,
+.footer-contact {
+  padding: 20px 15px;
+  /* margin: 5px; */
+  /* border: 1px solid red; */
+}
+
+.footer-about .footer-logo {
+  font-size: 5vw;
+  text-transform: capitalize;
+  font-weight: 900;
+  letter-spacing: 1rem;
+  color: #0d6efd;
+}
+.footer-about p {
+  color: rgb(175, 177, 187);
+  font-size: 15px;
+  padding: 10px 0;
+}
+.footer-social-title {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0d6efd;
+}
+
+.footer-social-icons {
+  width: 250px;
+  min-width: 150px;
+  max-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  /* margin: auto; */
+}
+.footer-social-icons i {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+  transition: all 0.3s linear;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  color: gray;
+}
+
+.footer-social-icons i:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+.footer-navgation h3,
+.footer-contact h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0d6efd;
+}
+
+.footer-navgation ul,
+.footer-contact ul {
+  padding: 0;
+  line-height: 2;
+  margin-top: 10px;
+  /* border: 1px solid red; */
+}
+.footer-navgation ul li,
+.footer-contact ul li {
+  list-style: none;
+  margin-left: 0;
+}
+.footer-navgation ul li a,
+.footer-contact ul li a {
+  color: gray;
+  text-align: left;
+  position: relative;
+  transition: all 0.5s linear;
+  font-size: 15px;
+}
+
+.footer-navgation ul li a::after,
+.footer-contact ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #0d6efd;
+  transition: all 0.5s ease-in-out;
+}
+
+.footer-navgation ul li a:hover::after,
+.footer-contact ul li a:hover::after {
+  width: 100%;
+}
+
+.footer-navgation ul li a:hover,
+.footer-contact ul li a:hover {
+  color: #0d6efd;
+  /* text-shadow: 0px 0px 1px #fff; */
+}
+
+.footer-contact ul li a i {
+  padding-right: 5px;
+  transition: all .2s linear ;
+}
+
+.footer-contact ul li a:hover i {
+  color: #0d6efd;
+}
+
+.Author {
+  border-top: 1px solid gray;
+  text-align: center;
+  padding: 20px;
+  color: gray;
+}
+
+.Author a {
+  color: #0d6efd;
+  text-decoration: underline;
+  text-decoration-color: #0d6efd;
+  text-shadow: 0 0 1px #fff;
+}
+
+.scroll-to-top {
+  background-color: #0d6efd !important ;
+  /* border: 2px solid green !important; */
+}
+
+.scroll-to-top svg {
+  font-size: 30px !important;
+  fill: #fff;
+  /* border: 1px solid red; */
+}

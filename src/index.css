@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
+/* ------------------------------------------ temp */
+.stand_pages {
+  width: 80%;
+  height: 30rem;
+  text-align: center;
+  color: #fff;
+  font-size: 5rem;
+  line-height: 30rem;
+  font-weight: 500;
+  margin: 1rem;
+  text-shadow: 3px 3px 0.5rem #000;
+}
+
+.stand_pages::first-letter {
+  text-shadow: 2px 2px 2px rgb(255, 0, 0);
+  font-size: 10rem;
+  text-decoration-line: underline;
+}
+
+/* ---------------------> Header of all pages */
+
+.header-pages-bg {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/header-img.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  text-align: center;
+  /* line-height: 90vh; */
+  margin-bottom: 2rem;
+  margin-top: -1rem;
+}
+
+.header-pages-bg p {
+  color: #fff;
+  font-size: 6vw;
+  text-transform: capitalize;
+  animation: headerPagesTitleAnimate 1 .5s linear;
+
+  text-align: center;
+  text-shadow: 1px 1px 2px #000;
+  width: 100%;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 1px solid red; */
+}
+
+@keyframes headerPagesTitleAnimate {
+  0% {
+    top: 65%;
+    opacity: 0;
+  }
+  100% {
+    top: 55%;
+    opacity: 1;
+  }
+}

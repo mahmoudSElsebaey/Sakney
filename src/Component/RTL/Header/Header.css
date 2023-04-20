@@ -1,0 +1,101 @@
+.header-bg {
+  background-image: url("../../../images/header-img.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  margin-top: -1rem;
+  position: relative;
+}
+
+.header-text {
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+  /* border: 1px solid red; */
+  width: 100%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-text h3 {
+  font-size: 5vw;
+  font-weight: bold;
+  letter-spacing: 1vw;
+  margin-bottom: 2.5vw;
+  position: relative;
+  width: fit-content;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: headerTextAnimate 0.3s 1 linear;
+}
+.header-text h2 {
+  font-size: 4vw;
+  position: relative;
+  width: fit-content;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: headerTextAnimate 0.6s 1 linear;
+}
+.header-text p {
+  font-size: 1.5vw;
+  position: relative;
+  width: fit-content;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: headerTextAnimate 0.9s 1 linear;
+}
+
+.header-btns {
+  width: fit-content;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+
+.header-btns button {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  animation: headerBtnAnimate 1.2s 1;
+  position: relative;
+  /* transition: all 0.5s linear; */
+}
+
+.header-btns button:nth-child(1) {
+  margin-right: 1rem;
+}
+/* .header-btns button:hover{
+    width: 10vw;
+} */
+@keyframes headerTextAnimate {
+  0% {
+    top: 100px;
+    opacity: 0;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes headerBtnAnimate {
+  0% {
+    transform: scale(0);
+    top: 100px;
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    top: 0px;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,93 @@
+.sign-bg {
+  width: 100%;
+  height: 90vh;
+  background-image: url("../../../images/header-img.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  margin-top: -1rem;
+  position: relative;
+}
+
+.sign-box {
+  width: 60%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 0.7rem;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2), -1px -1px 10px rgba(0, 0, 0, 0.2);
+  /* text-align: center; */
+  animation: signBoxAnimate 0.5s 1 linear;
+  padding: 2rem;
+  overflow: hidden;
+}
+.form-title {
+  font-size: 2rem !important;
+  font-weight: 600;
+  color: #0f3466 !important;
+  text-align: center !important;
+  display: block;
+  margin-top: -2rem !important;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid rgba(0, 110, 255, 0.2);
+  padding: 0.5rem 0;
+  animation: formTitleAinmate 0.5s 1 0.5s linear;
+}
+
+.form-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  /* border: 1px solid red; */
+}
+.form-group .inp {
+  width: 48%;
+  /* border: 1px solid red; */
+}
+
+.form-control {
+  padding: auto 15px !important;
+  height: 40px;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.form-control:focus::placeholder {
+  border: 1px solid #0063f7;
+  font-size: 12px !important;
+}
+
+.form-label {
+  color: #0f3466;
+  font-weight: bold;
+}
+
+.sign-btn {
+  width: 10vw;
+}
+
+@keyframes signBoxAnimate {
+  0% {
+    margin-top: -200px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes formTitleAinmate {
+  0% {
+    letter-spacing: 0rem;
+  }
+  50% {
+    letter-spacing: 1.5rem;
+  }
+  100% {
+    letter-spacing: 0rem;
+  }
+}

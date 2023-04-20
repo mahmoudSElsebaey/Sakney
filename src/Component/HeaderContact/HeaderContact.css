@@ -1,0 +1,89 @@
+.header-contact-parent {
+  background-color: rgba(0, 0, 0, 0.95);
+  color: rgba(242, 239, 239, 0.708);
+  /* opacity: 0.5; */
+}
+
+.header-contact {
+  /* height: 60px; */
+  /* line-height: 40px; */
+  display: flex;
+  justify-content: space-between;
+  text-shadow: 1px 1px 2px black;
+}
+
+.header-weather-lang {
+  line-height: 2.5rem;
+  font-size: 0.8rem;
+  font-style: italic;
+  /* fwb */
+}
+.header-weather-lang span{
+  margin: 0 .8rem;
+  word-spacing: .3rem;
+}
+
+.header-weather-lang span:nth-last-child(1){
+  font-style: normal;
+}
+
+
+.social-conatct-icons {
+  width: 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-conatct-icons i {
+  cursor: pointer;
+  line-height: 2.5rem;
+  font-size: 15px;
+}
+
+.social-conatct-icons a {
+  color: rgba(242, 239, 239, 0.708) !important;
+}
+
+.social-conatct-icons i:hover {
+  color: rgb(255, 255, 255);
+}
+
+/* 
+.social-conatct-icons i:nth-child(1) {
+  animation: icon-animate 0.5s 1 2s;
+}
+
+.social-conatct-icons i:nth-child(2) {
+  animation: icon-animate 0.5s 1 2.5s;
+}
+
+.social-conatct-icons i:nth-child(3) {
+  animation: icon-animate 0.5s 1 3s;
+}
+
+.social-conatct-icons i:nth-child(4) {
+  animation: icon-animate 0.5s 1 3.5s;
+}
+
+.social-conatct-icons i:nth-child(5) {
+  animation: icon-animate 0.5s 1 4s;
+}
+
+.social-conatct-icons i:nth-child(6) {
+  animation: icon-animate 0.5s 1 4.5s;
+}
+@keyframes icon-animate {
+  0% {
+    color: #000;
+    transform: scale(2.5);
+    opacity: 0;
+  }
+  100% {
+    color: rgb(249, 249, 249);
+    transform: scale(1);
+  }
+} */
+
+.dropdowm-languages{
+  border: 1px solid red !important;
+}
