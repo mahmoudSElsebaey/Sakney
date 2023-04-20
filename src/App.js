@@ -83,7 +83,7 @@ function App() {
 
       <Routes>
         {/* English Language  اللغة الانجليزية */}
-        <Route path="/" element={<NavbarMain />}>
+        <Route path="/Sakney" element={<NavbarMain />}>
           <Route path="" element={<Home />} />
           <Route path="apartments" element={<ApartmentPage />} />
           <Route path="about" element={<AboutPage />} />

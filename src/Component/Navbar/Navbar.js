@@ -7,7 +7,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import logoImg from "../../images/Sakney3.jpg";
-import { NavLink, Link ,Outlet } from "react-router-dom";
+import { NavLink, Link, Outlet } from "react-router-dom";
 
 function NavbarMain() {
   return (
@@ -67,7 +67,7 @@ function NavbarMain() {
                     to="search"
                     id="btnSearch"
                   >
-                    Search
+                    <i className="fas fa-search"></i> Search
                   </Button>
                 </Form>
                 <Button
@@ -75,7 +75,7 @@ function NavbarMain() {
                   className="nav-btn-add-ads mx-2"
                   as={NavLink}
                   to="createAd"
-                  id='btnAddAds'
+                  id="btnAddAds"
                 >
                   <i className="fas fa-plus text-white"></i>
                   <span className="text-white"> create Ad</span>

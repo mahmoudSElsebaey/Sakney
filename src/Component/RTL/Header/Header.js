@@ -11,12 +11,12 @@ function Header() {
           <p>سكنى هى الوجهة الأولى للباحثين عن السكن المشترك فى مصر</p>
           <div className="header-btns">
             <button className="btn btn-primary" dir="rtl">
-              <i className="fas fa-search"></i>
-              <Link to="search"> بحث</Link>
+            
+              <Link to="search">  <i className="fas fa-search"></i> بحث</Link>
             </button>
             <button className="btn btn-danger" dir="rtl">
-              <i className="fas fa-plus"></i>
-              <Link to="search"> اضف اعلان</Link>
+              
+              <Link to="createAd"><i className="fas fa-plus"></i> اضف اعلان</Link>
             </button>
           </div>
         </div>

@@ -18,7 +18,7 @@ function Header() {
             </button>
             <button className="btn btn-danger">
               <i className="fas fa-plus"></i>
-              <Link to="search"> Add Ads</Link>
+              <Link to="createAd"> Add Ads</Link>
             </button>
           </div>
         </div>
