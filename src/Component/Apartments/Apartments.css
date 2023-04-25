@@ -163,3 +163,15 @@
     width: 180px;
   }
 }
+
+/* --------------------------------------- BOX INFO -------*/
+.box-info{
+  background-color: green;
+  width: 500px;
+  height: 300px;
+  text-align: center;
+  font-weight: bold;
+  display: none;
+  position: absolute;
+  z-index: 10;
+}

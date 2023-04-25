@@ -28,7 +28,7 @@ function ApartmentPage() {
           }
         }}
       >
-        See More
+      See More
       </button>
       <Footer />
     </>

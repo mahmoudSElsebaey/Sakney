@@ -35,7 +35,7 @@ function Apartment() {
               />
             );
           })}
-           {/* {data.map((item) => {
+           {data.map((item) => {
             return (
               <DrawingData
                 key={item.id}
@@ -43,7 +43,7 @@ function Apartment() {
                 // handelCounter={handelCounter}
               />
             );
-          })} */}
+          })}
         </div>
       </section>
     
