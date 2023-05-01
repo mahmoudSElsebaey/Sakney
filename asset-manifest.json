@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Sakney/static/css/main.39bb5719.css",
-    "main.js": "/Sakney/static/js/main.a647ca6f.js",
+    "main.css": "/Sakney/static/css/main.67348e5b.css",
+    "main.js": "/Sakney/static/js/main.da5fb10f.js",
     "static/media/Students.gif": "/Sakney/static/media/Students.98b6fe892708e77636b2.gif",
     "static/media/fa-solid-900.ttf": "/Sakney/static/media/fa-solid-900.b48ad290d0335879a92b.ttf",
     "static/media/House searching-cuate.png": "/Sakney/static/media/House searching-cuate.65e5d004250e6b1964a3.png",
@@ -21,11 +21,11 @@
     "static/media/fa-v4compatibility.ttf": "/Sakney/static/media/fa-v4compatibility.f601162ae669f88823a3.ttf",
     "static/media/fa-v4compatibility.woff2": "/Sakney/static/media/fa-v4compatibility.745989aab0d69cab7e70.woff2",
     "index.html": "/Sakney/index.html",
-    "main.39bb5719.css.map": "/Sakney/static/css/main.39bb5719.css.map",
-    "main.a647ca6f.js.map": "/Sakney/static/js/main.a647ca6f.js.map"
+    "main.67348e5b.css.map": "/Sakney/static/css/main.67348e5b.css.map",
+    "main.da5fb10f.js.map": "/Sakney/static/js/main.da5fb10f.js.map"
   },
   "entrypoints": [
-    "static/css/main.39bb5719.css",
-    "static/js/main.a647ca6f.js"
+    "static/css/main.67348e5b.css",
+    "static/js/main.da5fb10f.js"
   ]
 }
