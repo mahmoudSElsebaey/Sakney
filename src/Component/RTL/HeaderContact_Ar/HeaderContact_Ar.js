@@ -72,16 +72,16 @@ function HeaderContact_Ar() {
             </span>
           </div>
           <div className="social-conatct-icons ">
-            <a href="https://facebook.com" target="_blank">
+            <a href="https://facebook.com" target="_blank" rel="noreferrer">
               <i className="fab fa-facebook-f"></i>
             </a>
-            <a href="https://twitter.com" target="_blank">
+            <a href="https://twitter.com" target="_blank" rel="noreferrer">
               <i className="fab fa-twitter"></i>
             </a>
-            <a href="https://instagram.com" target="_blank">
+            <a href="https://instagram.com" target="_blank" rel="noreferrer">
               <i className="fab fa-instagram"></i>
             </a>
-            <a href="https://whatsapp.com" target="_blank">
+            <a href="https://whatsapp.com" target="_blank" rel="noreferrer">
               <i className="fab fa-whatsapp"></i>
             </a>
           </div>

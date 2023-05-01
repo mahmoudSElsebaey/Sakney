@@ -3,6 +3,10 @@ import "./footer.css";
 import { Link } from "react-router-dom";
 import ScrollToTop from "react-scroll-to-top";
 function Footer() {
+  const handleLinkClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+  //  onClick={handleLinkClick}
   return (
     <>
       <ScrollToTop smooth top="450" />
@@ -35,22 +39,34 @@ function Footer() {
 
             <ul>
               <li>
-                <Link to="/">الرئيسية</Link>
+                <Link to="/ar" onClick={handleLinkClick}>
+                  الرئيسية
+                </Link>
               </li>
               <li>
-                <Link to="/categories">الوحدات السكنية</Link>
+                <Link to="/ar/apartments" onClick={handleLinkClick}>
+                  الوحدات السكنية
+                </Link>
               </li>
               <li>
-                <Link to="/about"> عنا موقعنا</Link>
+                <Link to="/ar/about" onClick={handleLinkClick}>
+                  عنا موقعنا
+                </Link>
               </li>
               <li>
-                <Link to="/contact">للتواصل معنا</Link>
+                <Link to="/ar/contact" onClick={handleLinkClick}>
+                  للتواصل معنا
+                </Link>
               </li>
               <li>
-                <Link to="/login">تسجيل الدخول</Link>
+                <Link to="/ar/signin" onClick={handleLinkClick}>
+                  تسجيل الدخول
+                </Link>
               </li>
               <li>
-                <Link to="/register">انشاء حساب</Link>
+                <Link to="/ar/signup" onClick={handleLinkClick}>
+                  انشاء حساب
+                </Link>
               </li>
             </ul>
           </div>
@@ -59,7 +75,7 @@ function Footer() {
             <h3 className="footer-contact-title">للتواصل معنا</h3>
             <ul>
               <li>
-                <Link to="#">
+                <Link to="https://www.google.com/search?client=firefox-b-d&q=%D9%85%D8%B5%D8%B1+%2C+%D8%A7%D9%84%D9%85%D9%86%D9%88%D9%81%D9%8A%D8%A9+%2C%D9%85%D8%B1%D9%83%D8%B2+%D8%B4%D8%A8%D9%8A%D9%86+%D8%A7%D9%84%D9%83%D9%88%D9%85">
                   <i className="fas fa-map-marker-alt"></i> مصر , المنوفية ,مركز
                   شبين الكوم
                 </Link>
@@ -84,7 +100,7 @@ function Footer() {
         </div>
         <div className="container Author">
           <p>
-          حقوق الطبع والنشر © 2022 جميع الحقوق محفوظة | من صنع  
+            حقوق الطبع والنشر © 2022 جميع الحقوق محفوظة | من صنع
             <Link to="#"> فريق التخرج لعام 2022-2023</Link>
           </p>
         </div>

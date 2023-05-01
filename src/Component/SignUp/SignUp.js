@@ -16,7 +16,11 @@ function SignUp() {
       document.querySelector(".usernameUp").value === "" ||
       document.querySelector(".emailUp").value === "" ||
       document.querySelector(".passwordUp").value === "" ||
-      document.querySelector(".confirmPasswordUp").value === ""
+      document.querySelector(".confirmPasswordUp").value === "" ||
+      document.querySelector(".ageUp").value === "" ||
+      document.querySelector(".phoneUp").value === "" ||
+      document.querySelector(".cityUp").value === "Select The City" ||
+      document.querySelector(".universityUp").value === "Select The University"
     ) {
       window.alert("Please fill all data");
     } else {
@@ -33,6 +37,13 @@ function SignUp() {
         "confirmPassword",
         document.querySelector(".confirmPasswordUp").value
       );
+      localStorage.setItem("age", document.querySelector(".ageUp").value);
+      localStorage.setItem("phone", document.querySelector(".phoneUp").value);
+      localStorage.setItem("city", document.querySelector(".cityUp").value);
+      localStorage.setItem(
+        "university",
+        document.querySelector(".universityUp").value
+      );
       setTimeout(() => {
         window.location = "signin";
       }, 1000);
@@ -46,7 +57,7 @@ function SignUp() {
           <Form.Text className="form-title">Register</Form.Text>
           <Form.Group className="form-group">
             <Form.Group className="mb-3 inp" controlId="formBasicUsername">
-              <Form.Label>Username</Form.Label>
+              {/* <Form.Label>Username</Form.Label> */}
               <Form.Control
                 type="text"
                 className="usernameUp"
@@ -54,7 +65,7 @@ function SignUp() {
               />
             </Form.Group>
             <Form.Group className="mb-3 inp" controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
+              {/* <Form.Label>Email address</Form.Label> */}
               <Form.Control
                 type="email"
                 className="emailUp"
@@ -68,7 +79,7 @@ function SignUp() {
 
           <Form.Group className="form-group">
             <Form.Group className="mb-3 inp" controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
+              {/* <Form.Label>Password</Form.Label> */}
               <Form.Control
                 type="password"
                 className="passwordUp"
@@ -79,7 +90,7 @@ function SignUp() {
               className="mb-3 inp"
               controlId="formBasicConfirmPassword"
             >
-              <Form.Label>Confirm Password</Form.Label>
+              {/* <Form.Label>Confirm Password</Form.Label> */}
               <Form.Control
                 type="password"
                 className="confirmPasswordUp"
@@ -87,10 +98,59 @@ function SignUp() {
               />
             </Form.Group>
           </Form.Group>
+
+          <Form.Group className="sign-info mb-3 ">
+            <Form.Control
+              type="number"
+              className="ageUp"
+              placeholder="Enter your age"
+            />
+            <Form.Control
+              type="text"
+              className="phoneUp"
+              placeholder="Enter your phone"
+            />
+          </Form.Group>
+          <Form.Group className="sign-info mb-3 ">
+            <Form.Select
+              className="cityUp"
+              aria-label="Default select example bg-info"
+            >
+              <option>Select The City</option>
+              <option value="Monufia">Monufia</option>
+              <option value="Cairo">Cairo</option>
+              <option value="Alexandria">Alexandria</option>
+              <option value="Aswan">Aswan</option>
+              <option value="Faiyum">Faiyum</option>
+              <option value="Ismailia">Ismailia</option>
+              <option value="Matrouh">Matrouh</option>
+              <option value="Qena">Qena</option>
+              <option value="Suez">Suez</option>
+              <option value="Sohag">Sohag</option>
+            </Form.Select>
+            <Form.Select
+              className="universityUp"
+              aria-label="Default select example bg-info"
+            >
+              <option>Select The University</option>
+              <option value="Monufia University">Monufia University</option>
+              <option value="Cairo University">Cairo University</option>
+              <option value="Alexandria University">
+                Alexandria University
+              </option>
+              <option value="Aswan University">Aswan University</option>
+              <option value="Faiyum University">Faiyum University</option>
+              <option value="Ismailia University">Ismailia University</option>
+              <option value="Matrouh University">Matrouh University</option>
+              <option value="Qena University">Qena University</option>
+              <option value="Suez University">Suez University</option>
+              <option value="Sohag University">Sohag University</option>
+            </Form.Select>
+          </Form.Group>
+
           <Form.Group className="mb-3 mx-2" controlId="formBasicCheckbox">
             <Form.Check type="checkbox" label="Check me out" />
           </Form.Group>
-
           <Button
             variant="primary"
             type="submit"

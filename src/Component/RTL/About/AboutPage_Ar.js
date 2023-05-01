@@ -1,17 +1,17 @@
 import "../../../index.css";
 import Footer from "../Footer/Footer";
-import About_Ar from "./About_Ar";
+import AboutAr from "./AboutAr";
 
-function AboutPage_Ar() {
+function AboutPageAr() {
   return (
     <>
       <div className="header-pages-bg">
         <p> حـــول موقعنـــــا</p>
       </div>
-      <About_Ar />
+      <AboutAr />
       <Footer />
     </>
   );
 }
 
-export default AboutPage_Ar;
+export default AboutPageAr;

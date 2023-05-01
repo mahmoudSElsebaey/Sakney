@@ -35,7 +35,7 @@
 }
 .card-parent .card-img {
   width: 100%;
-  height: 70%;
+  height: 65%;
   position: relative;
   overflow: hidden;
 }
@@ -57,7 +57,7 @@
 /* ---------------------------------- test ---------------- */
 .ApartmentInfo {
   background-color: rgb(28, 138, 28);
-  width: 100%;  
+  width: 100%;
   position: absolute;
   top: 0;
   /* display: none; */
@@ -70,7 +70,7 @@
   color: #fff;
   z-index: 1555;
 }
- 
+
 /* ---------------------------------------------------------- */
 .card-parent .card-title h3 {
   font-size: 16px;
@@ -78,7 +78,8 @@
   text-transform: capitalize;
   color: rgba(0, 0, 0, 0.826);
   transition: all 0.5s;
-  text-align: right;
+  height: 40px;
+  /* border: 1px solid red; */
 }
 .card-parent:hover .card-title h3 {
   color: #0d6efd;
@@ -164,14 +165,67 @@
   }
 }
 
-/* --------------------------------------- BOX INFO -------*/
-.box-info{
-  background-color: green;
-  width: 500px;
-  height: 300px;
-  text-align: center;
-  font-weight: bold;
-  display: none;
+/* --------------------------------------- apartment info -------*/
+
+.apartment-info {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 10000;
+}
+
+.apartment-info button {
   position: absolute;
-  z-index: 10;
+  top: 2%;
+  right: 3%;
+  padding: 0.1vw 1vw;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.apartment-info-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 550px;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  overflow: hidden;
+  border: 1px solid #0d6dfd59;
+  border-radius: 10px;
+}
+.apartment-info-title {
+  font-size: 2vw;
+  text-align: center;
+  color: #0d6efd;
+}
+.apartment-info-img {
+  width: 100%;
+  height: 50%;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+.apartment-info-img img {
+  width: 50%;
+  height: 100%;
+  display: block;
+}
+.apartment-info-img p {
+  width: 48%;
+  line-height: 2.5;
+  margin-top: 50px;
+  letter-spacing: 1px;
+}
+.apartment-more-info {
+  padding: 10px;
+  /* border: 1px solid red; */
+}
+.apartment-more-info p {
+  line-height: 2;
 }

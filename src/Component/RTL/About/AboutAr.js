@@ -4,7 +4,7 @@ import React from "react";
 import aboutImg1 from "./AboutImages/Students.gif";
 import aboutImg2 from "./AboutImages/House searching-cuate.png";
 
-function About_Ar() {
+function AboutAr() {
   return (
     <>
       <div className="container about-sec " dir="rtl">
@@ -69,4 +69,4 @@ function About_Ar() {
   );
 }
 
-export default About_Ar;
+export default AboutAr;

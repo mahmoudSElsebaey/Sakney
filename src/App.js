@@ -1,9 +1,10 @@
 import "./App.css";
-// import HeaderContact from "./Component/HeaderContact/HeaderContact";
+
 import Home from "./Component/Home/Home";
 import { Route, Routes } from "react-router-dom";
 import SignIn from "./Component/SignIn/SignIn";
 import SignUp from "./Component/SignUp/SignUp";
+import Account from "./Component/UserAccount/UserAccount";
 import Search from "./Component/Search/Search";
 import NavbarMain from "./Component/Navbar/Navbar";
 import ContactPage from "./Component/Contact/ContactPage";
@@ -23,6 +24,8 @@ import ContactPageAr from "./Component/RTL/Contact/ContactPage";
 import ErrorAr from "./Component/RTL/Error/Error";
 import SigninAr from "./Component/RTL/SignIn/SignIn";
 import SignupAr from "./Component/RTL/SignUp/SignUp";
+import AccountAr from "./Component/RTL/UserAccount/UserAccount";
+
 // Ad en
 import CreatAdMsg from "./Component/CreateAd/CreatAdMsg";
 import DetailsAd from "./Component/CreateAd/details";
@@ -40,12 +43,13 @@ import PricingAdAr from "./Component/RTL/CreateAd/pricing";
 import ImagesAdAr from "./Component/RTL/CreateAd/imagesAd";
 import ContactAdAr from "./Component/RTL/CreateAd/contactAd";
 import SaveAdAr from "./Component/RTL/CreateAd/saveAd";
- 
-function App() {
+
+const App = () => {
   // const handelCounter = (item) => {
   //   if (counter.indexOf(item) !== -1) return;
   //   setCounter([...counter, item]);
   // };
+
   return (
     <>
       {/* <HeaderContact /> */}
@@ -60,6 +64,7 @@ function App() {
           <Route path="Contact" element={<ContactPage />} />
           <Route path="signin" element={<SignIn />} />
           <Route path="signup" element={<SignUp />} />
+          <Route path="my-account" element={<Account />} />
           <Route path="search" element={<Search />} />
           {/* <Route path="createAd" element={<CreatAd />} /> */}
           <Route path="createAd" element={<CreatAd />}>
@@ -82,6 +87,7 @@ function App() {
           <Route path="contact" element={<ContactPageAr />} />
           <Route path="signin" element={<SigninAr />} />
           <Route path="signup" element={<SignupAr />} />
+          <Route path="my-account" element={<AccountAr />} />
           <Route path="search" element={<SearchAr />} />
           <Route path="createAd" element={<CreatAdAr />}>
             <Route path="" element={<CreatAdMsgAr />} />
@@ -95,8 +101,9 @@ function App() {
           <Route path="*" element={<ErrorAr />} />
         </Route>
       </Routes>
+      {/* </ApartmentsData.Provider> */}
     </>
   );
-}
+};
 
 export default App;

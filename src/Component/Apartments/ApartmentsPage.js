@@ -2,6 +2,7 @@ import React from "react";
 import "../../index.css";
 import Footer from "../Footer/Footer";
 import Apartment from "./Apartments";
+// import { Outlet } from "react-router-dom";
 
 function ApartmentPage() {
   let numOfItems = 3;
@@ -12,6 +13,7 @@ function ApartmentPage() {
         <p>All Apartments</p>
       </div>
       <Apartment />
+      {/* <Outlet /> */}
       <button
         className="btn btn-primary mx-auto d-block my-3 px-5 py-2 w-100 container"
         id="loadMoreBtn"
@@ -28,7 +30,7 @@ function ApartmentPage() {
           }
         }}
       >
-      See More
+        <i className="fas fa-angle-down"></i>
       </button>
       <Footer />
     </>

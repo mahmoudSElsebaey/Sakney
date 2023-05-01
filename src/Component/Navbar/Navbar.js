@@ -23,6 +23,10 @@ function NavbarMain() {
     }
   }, []);
 
+  const handleLinkClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <>
       {["lg"].map((expand) => (
@@ -33,7 +37,12 @@ function NavbarMain() {
           className="mb-3 sticky-top navbar-style"
         >
           <Container fluid>
-            <Navbar.Brand as={NavLink} to="" className="navbar-logo">
+            <Navbar.Brand
+              as={NavLink}
+              to=""
+              className="navbar-logo"
+              onClick={handleLinkClick}
+            >
               <img src={logoImg} alt="logo" title="Sakney" />
               {/* <img src="../../images/Sakney3.jpg" alt="logo image" title="Sakney" /> */}
             </Navbar.Brand>
@@ -50,16 +59,20 @@ function NavbarMain() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className=" flex-grow-1 pe-3 nav-links">
-                  <Nav.Link as={NavLink} to="">
+                  <Nav.Link as={NavLink} to="" onClick={handleLinkClick}>
                     Home
                   </Nav.Link>
-                  <Nav.Link as={NavLink} to="apartments">
+                  <Nav.Link
+                    as={NavLink}
+                    to="apartments"
+                    onClick={handleLinkClick}
+                  >
                     apartments
                   </Nav.Link>
-                  <Nav.Link as={NavLink} to="about">
+                  <Nav.Link as={NavLink} to="about" onClick={handleLinkClick}>
                     About
                   </Nav.Link>
-                  <Nav.Link as={NavLink} to="contact">
+                  <Nav.Link as={NavLink} to="contact" onClick={handleLinkClick}>
                     Contact
                   </Nav.Link>
                 </Nav>
@@ -68,14 +81,25 @@ function NavbarMain() {
                     className="justify-content-end flex-grow-1 pe-3 nav-links"
                     id="navLinks"
                   >
-                    <Nav.Link as={NavLink} to="signin" id="SignInBtn">
+                    <Nav.Link
+                      as={NavLink}
+                      to="signin"
+                      id="SignInBtn"
+                      onClick={handleLinkClick}
+                    >
                       Sign In
                     </Nav.Link>
                     {/* <span>|</span> */}
-                    <Nav.Link as={NavLink} to="signup" id="SignUpBtn">
+                    <Nav.Link
+                      as={NavLink}
+                      to="signup"
+                      id="SignUpBtn"
+                      onClick={handleLinkClick}
+                    >
                       Sign Up
                     </Nav.Link>
                   </Nav>
+                  {/* User Account */}
                   <Nav
                     className="justify-content-end flex-grow-1 pe-3 nav-links"
                     id="navUser"
@@ -83,7 +107,7 @@ function NavbarMain() {
                       display: "none",
                     }}
                   >
-                    <Nav.Link as={NavLink} to="search">
+                    <Nav.Link as={NavLink} to="my-account">
                       <i className="fas fa-user p-1"></i>
                       <span id="user"></span>
                     </Nav.Link>
@@ -94,6 +118,7 @@ function NavbarMain() {
                     as={Link}
                     to="search"
                     id="btnSearch"
+                    onClick={handleLinkClick}
                   >
                     <i className="fas fa-search"></i> Search
                   </Button>
@@ -104,11 +129,11 @@ function NavbarMain() {
                   as={NavLink}
                   to="createAd"
                   id="btnAddAds"
+                  onClick={handleLinkClick}
                 >
                   <i className="fas fa-plus text-white"></i>
                   <span className="text-white"> create Ad</span>
                 </Button>
-                {/* <div className="nav-dd">add</div> */}
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>

@@ -28,7 +28,7 @@ function ApartmentPage() {
           }
         }}
       >
-        See More
+       <i className="fas fa-angle-down"></i>
       </button>
       <Footer />
     </>

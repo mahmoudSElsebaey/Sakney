@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import apartmentsData from "./Data/apartmentsData";
 import DrawingData from "./DrawingData";
 import "./Apartments.css";
+import { Outlet } from "react-router-dom";
 
 function Apartment() {
   const [data] = useState(apartmentsData);
@@ -26,7 +27,7 @@ function Apartment() {
               />
             );
           })}
-         {data.map((item) => {
+          {data.map((item) => {
             return (
               <DrawingData
                 key={item.id}
@@ -35,7 +36,7 @@ function Apartment() {
               />
             );
           })}
-           {data.map((item) => {
+          {data.map((item) => {
             return (
               <DrawingData
                 key={item.id}
@@ -46,7 +47,7 @@ function Apartment() {
           })}
         </div>
       </section>
-    
+      <Outlet />;
     </>
   );
 }

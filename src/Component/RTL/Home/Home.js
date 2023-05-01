@@ -5,7 +5,7 @@ import "./Home.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
-import About from "./../About/About_Ar";
+import About from "../About/AboutAr";
 
 function Home() {
   return (

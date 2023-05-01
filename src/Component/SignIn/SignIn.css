@@ -80,3 +80,15 @@
     letter-spacing: 0rem;
   }
 }
+
+.sign-info {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sign-info .form-control,
+.sign-info .form-select {
+  width: 48%;
+  padding: 10px 15px;
+}

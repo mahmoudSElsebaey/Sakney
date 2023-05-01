@@ -7,12 +7,20 @@ import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
 
 function Home() {
+  const handleLinkClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <>
       <Header />
       <p className="title-section">Advertisement</p>
       <Apartment />
-      <Link to="apartments" className="text-primary see-all-btn container">
+      <Link
+        to="apartments"
+        className="text-primary see-all-btn container"
+        onClick={handleLinkClick}
+      >
         See all
       </Link>
 

@@ -8,7 +8,7 @@ const Error = () => {
       <div className="error-parent">
         <div className="error-child">
         <p> this Page Not Found</p>
-        <a href="/"> Return to home page</a></div>
+        <a href="/Sakney"> Return to home page</a></div>
       </div>
       <Footer />
     </>
